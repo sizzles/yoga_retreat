@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Source+Code+Pro:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=19">
+    <link rel="stylesheet" href="styles.css?v=20">
 </head>
 <body>
 
@@ -28,7 +28,7 @@
                 <li><a href="#practice">The Practice</a></li>
                 <li><a href="#location">Location</a></li>
                 <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#book" class="nav-cta">Book Now</a></li>
+                <li><a href="#book" class="nav-cta">Waitlist</a></li>
             </ul>
         </div>
     </nav>
@@ -38,10 +38,11 @@
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <p class="hero-eyebrow">Hosted By Olivia &amp; Claire</p>
+            <span class="sold-out-banner">Sold Out</span>
             <h1 class="hero-title">Three days<br>in the Dordogne.</h1>
             <p class="hero-subtitle">17 &ndash; 20 September 2026</p>
-            <a href="#book" class="btn btn-hero">Reserve Your Place</a>
-            <p class="hero-capacity">Limited to 8 guests &middot; From &pound;945</p>
+            <a href="#book" class="btn btn-hero">Join the Waitlist</a>
+            <p class="hero-capacity"><span class="is-struck">Limited to 8 guests &middot; From &pound;945</span></p>
         </div>
         <div class="hero-scroll">
             <span>Scroll</span>
@@ -265,32 +266,32 @@
                 <h2>Choose your room</h2>
                 <p class="section-intro">Both options include all practices, meals, workshops, and full use of the retreat grounds.</p>
             </div>
-            <div class="pricing-grid">
+            <div class="pricing-grid pricing-grid--soldout">
                 <div class="pricing-card pricing-card--featured reveal">
                     <div class="pricing-label">Shared Room</div>
-                    <div class="pricing-amount">&pound;945</div>
-                    <div class="pricing-per">per person</div>
-                    <ul class="pricing-features">
+                    <div class="pricing-amount is-struck">&pound;945</div>
+                    <div class="pricing-per is-struck">per person</div>
+                    <ul class="pricing-features is-struck">
                         <li>Shared room (2 guests)</li>
                         <li>All meals included</li>
                         <li>All yoga sessions</li>
                         <li>Optional workshops</li>
                         <li>Pool &amp; grounds access</li>
                     </ul>
-                    <a href="#book" class="btn btn-primary">Book Shared Room</a>
+                    <span class="btn btn-soldout">Sold Out</span>
                 </div>
                 <div class="pricing-card reveal">
                     <div class="pricing-label">Individual Room</div>
-                    <div class="pricing-amount">&pound;1,095</div>
-                    <div class="pricing-per">per person</div>
-                    <ul class="pricing-features">
+                    <div class="pricing-amount is-struck">&pound;1,095</div>
+                    <div class="pricing-per is-struck">per person</div>
+                    <ul class="pricing-features is-struck">
                         <li>Private room</li>
                         <li>All meals included</li>
                         <li>All yoga sessions</li>
                         <li>Optional workshops</li>
                         <li>Pool &amp; grounds access</li>
                     </ul>
-                    <a href="#book" class="btn btn-primary">Book Individual Room</a>
+                    <span class="btn btn-soldout">Sold Out</span>
                 </div>
             </div>
         </div>
@@ -300,16 +301,13 @@
     <section class="section section--dark" id="book">
         <div class="container">
             <div class="book-content reveal">
+
                 <h2>Ready to step onto the mat?</h2>
-                <p>Only 8 spaces available. 
-                    Secure your place with &pound;150 deposit (non-refundable), followed by &pound;500 and then the remainder.
-                 </p>
+                <p>Thank you for the incredible response &mdash; all 8 spaces are taken. Email or DM Olivia to join the waitlist or hear about future retreats.</p>
 
                 <div class="book-actions">
-                    <!-- Payment link placeholder - replace href with Stripe/payment link -->
-                    <a href="https://sales.protectedpaymentservices.com/button/x4NNuTw525tD" class="btn btn-hero" id="paymentLink" target="_blank" rel="noopener noreferrer">Pay &pound;150 Deposit</a>
-                    <p class="book-note">Questions? Drop me an email:</p>
                     <button class="btn btn-outline btn-copy" data-email="olivia@yogaretreat.info" onclick="copyEmail(this)">olivia@yogaretreat.info</button>
+                    <a href="https://www.instagram.com/olivia_cummins_yoga/" target="_blank" rel="noopener" class="btn btn-outline btn-copy">DM @olivia_cummins_yoga</a>
                 </div>
             </div>
         </div>
@@ -367,9 +365,10 @@
     <div class="sticky-cta" id="stickyCta">
         <div class="sticky-cta-inner">
             <div class="sticky-cta-text">
-                <span class="sticky-cta-price">From &pound;945</span>
+                <span class="sticky-cta-price">Sold Out</span>
+                <span class="sticky-cta-detail">17&ndash;20 Sept 2026</span>
             </div>
-            <a href="#book" class="btn btn-primary btn-sticky">Book Now</a>
+            <a href="#book" class="btn btn-primary btn-sticky">Waitlist</a>
         </div>
     </div>
 
